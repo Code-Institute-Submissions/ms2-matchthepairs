@@ -9,15 +9,15 @@ body {
 
 /*-------------------------Header----------------------- */ 
 #logo {
-    height: 5rem;
+    height: 4rem;
 }
 
 .navbar {
-    background-color: #BDE9EF;
+    background-color: #F7F3F5;
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: .2rem;
-    padding-right: 1.5rem;
+    padding: 0 1.5rem 0 .5rem;
 }
 
 .navbar-toggler {
@@ -29,7 +29,11 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #1F1F1F;
+    color: #330C2F;
+}
+
+.navbar-light .navbar-nav .nav-item .active {
+    color: #330C2F;
 }
 
 /*-------------------------Footer----------------------- */
