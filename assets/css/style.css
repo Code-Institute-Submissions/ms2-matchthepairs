@@ -32,4 +32,16 @@ body {
     color: #1F1F1F;
 }
 
+/*-------------------------Footer----------------------- */
+.footer-section {
+    background-color: #330C2F;
+    color: #F7F3F5;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-section a i {
+    color: #F7F3F5;
+}
+
 /*-------------------------Media Queries----------------------- */ 
