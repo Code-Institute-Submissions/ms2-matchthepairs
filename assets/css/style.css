@@ -32,6 +32,12 @@ body {
     color: #330C2F;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #330C2F;
+    text-decoration: underline #7ADBE6 .3rem;
+    transition: .5s;
+}
+
 .navbar-light .navbar-nav .nav-item .active {
     color: #330C2F;
     font-weight: 700;
