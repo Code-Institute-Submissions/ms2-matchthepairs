@@ -12,6 +12,24 @@ body {
     height: 5rem;
 }
 
-header {
+.navbar {
     background-color: #BDE9EF;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding-right: 1.5rem;
 }
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+.navbar-collapse {
+    padding: 1rem 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #1F1F1F;
+}
+
+/*-------------------------Media Queries----------------------- */ 
