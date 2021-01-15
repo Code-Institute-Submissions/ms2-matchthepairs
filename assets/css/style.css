@@ -40,8 +40,15 @@ body {
     padding: 1rem;
 }
 
+.footer-section a {
+    text-decoration: none;
+    color: #F7F3F5;
+}
+
 .footer-section a i {
     color: #F7F3F5;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 /*-------------------------Media Queries----------------------- */ 
