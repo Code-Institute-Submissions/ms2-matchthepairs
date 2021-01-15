@@ -15,9 +15,9 @@ body {
 .navbar {
     background-color: #F7F3F5;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .2rem;
-    padding: 0 1.5rem 0 .5rem;
+    padding: 0 1rem 0 .5rem;
 }
 
 .navbar-toggler {
@@ -34,6 +34,7 @@ body {
 
 .navbar-light .navbar-nav .nav-item .active {
     color: #330C2F;
+    font-weight: 700;
 }
 
 /*-------------------------Footer----------------------- */
@@ -51,7 +52,7 @@ body {
 }
 
 .footer-section a:hover {
-    color: #B0DEE8;
+    color: #7ADBE6;
 }
 
 .footer-section a i {
@@ -61,7 +62,7 @@ body {
 }
 
 .footer-section a i:hover {
-    color: #B0DEE8;
+    color: #7ADBE6;
 }
 
 .footer-copyright {
