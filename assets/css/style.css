@@ -38,6 +38,7 @@ body {
     color: #F7F3F5;
     text-align: center;
     padding: 1rem;
+    font-size: .8rem;
 }
 
 .footer-section a {
@@ -45,10 +46,22 @@ body {
     color: #F7F3F5;
 }
 
+.footer-section a:hover {
+    color: #B0DEE8;
+}
+
 .footer-section a i {
     color: #F7F3F5;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 1rem;
+}
+
+.footer-section a i:hover {
+    color: #B0DEE8;
+}
+
+.footer-copyright {
+    font-weight: 200;
 }
 
 /*-------------------------Media Queries----------------------- */ 
