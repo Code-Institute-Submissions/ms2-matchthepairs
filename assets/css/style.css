@@ -61,6 +61,45 @@ body {
     font-size: 1.7rem;
     color: #90143D;
 }
+
+.main-heading i:hover {
+    color: #7ADBE6;
+}
+
+.modal-content {
+    background-color: #F7F3F5;
+    border: #7ADBE6 .25rem solid;
+}
+
+.modal-title {
+    color: #90143D;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 1rem;
+}
+
+.modal-body li {
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+.modal-body a {
+    text-decoration: none;
+    color: #90143D;
+}
+
+.modal-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #90143D;
+}
 /*-------------------------HOME PAGE----------------------- */
 
 
