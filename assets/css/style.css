@@ -104,7 +104,11 @@ body {
 }
 
 /*-------------------------HOME PAGE----------------------- */
-
+.intro-par {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 /*-------------------------Footer----------------------- */
 .footer-section {
