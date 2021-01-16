@@ -5,11 +5,15 @@
 body {
     font-family: Nunito, sans-serif;
     color: #1F1F1F;
+    background-color: #F7F3F5;
 }
 
 /*-------------------------Headings----------------------- */
-h1 {
+.main-heading {
     text-align: center;
+    color: #330C2F;
+    margin-bottom: 0;
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 
 /*-------------------------Header----------------------- */ 
@@ -52,14 +56,13 @@ h1 {
     font-weight: 700;
 }
 
-/*-------------------------HOME PAGE----------------------- */
-.main-heading {
-    padding: 1.5rem 1rem;
-}
-
+/*-------------------------HOME PAGE MODAL----------------- */
 .main-heading i {
-    padding-left: 2rem;
+    font-size: 1.7rem;
+    color: #90143D;
 }
+/*-------------------------HOME PAGE----------------------- */
+
 
 /*-------------------------Footer----------------------- */
 .footer-section {
