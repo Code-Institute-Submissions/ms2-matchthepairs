@@ -71,6 +71,10 @@ body {
     color: #7ADBE6;
 }
 
+.modal-dialog {
+    padding: 1rem;
+}
+
 .modal-content {
     background-color: #F7F3F5;
     border: #7ADBE6 .25rem solid;
