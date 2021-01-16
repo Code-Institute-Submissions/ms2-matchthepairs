@@ -7,6 +7,11 @@ body {
     color: #1F1F1F;
 }
 
+/*-------------------------Headings----------------------- */
+h1 {
+    text-align: center;
+}
+
 /*-------------------------Header----------------------- */ 
 #logo {
     height: 4rem;
@@ -45,6 +50,15 @@ body {
 .navbar-light .navbar-nav .nav-item .active {
     color: #330C2F;
     font-weight: 700;
+}
+
+/*-------------------------HOME PAGE----------------------- */
+.main-heading {
+    padding: 1.5rem 1rem;
+}
+
+.main-heading i {
+    padding-left: 2rem;
 }
 
 /*-------------------------Footer----------------------- */
