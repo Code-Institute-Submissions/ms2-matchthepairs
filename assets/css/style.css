@@ -127,6 +127,9 @@ h2 {
 }
 
 /*-------------------------CONTACT PAGE------------------- */
+.container-fluid {
+    margin: 0;
+}
 .contact-details {
     text-align: center;
     padding: 2rem 2.5rem 1rem 2.5rem;
@@ -244,5 +247,16 @@ label {
     }
     .instruction-section a:hover {
         color: #7ADBE6;
+    }
+    .contact-form {
+        padding-top: 2rem;
+    }
+    .form-group {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .contact-icons a {
+        font-size: 2rem;
+        padding: 1.5rem;
     }
 }
