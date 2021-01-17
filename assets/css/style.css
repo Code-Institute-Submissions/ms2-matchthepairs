@@ -147,7 +147,11 @@ h2 {
 
 .contact-form {
     text-align: center;
-    padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.form-group {
+    padding: 1rem;
 }
 
 label {
@@ -210,6 +214,10 @@ label {
     }
     #logo {
         height: 5rem;
+    }
+    .form-group {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
