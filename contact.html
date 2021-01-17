@@ -58,18 +58,21 @@
         </p>
     </div>
 
-    <div> 
+    <div class="contact-form"> 
         <h2>Have A Question?</h2> 
         <p>
-            Send us a message and we'll get back to you as soon as we can!
+            We always welcome any feedback so if you have suggestions on how to improve the game or any features you'd like to see included;
+            fill out the form below and we'll get back to you as soon as we can!
         </p> 
         <!-- CONTACT FORM -->
-        <form>
-            <input type="text"><br>
-            <input type="email"><br>
-            <input type="text"><br>
-            <input type="submit">
-        </form>
+        <div class="form-group">
+            <form>
+                <input type="text" name="fullname" id="fullname" class="form-control"><br>
+                <input type="email" name="email" id="email" class="form-control"><br>
+                <textarea name="message" id="message" class="form-control" cols="30" rows="10"></textarea><br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+        </div>
         <!-- End of CONTACT FORM -->
     </div>
 
