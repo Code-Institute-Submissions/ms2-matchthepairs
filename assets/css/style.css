@@ -122,10 +122,15 @@ body {
 }
 
 /*-------------------------CONTACT PAGE------------------- */
+.contact-details {
+    text-align: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+}
 .contact-icons a {
     text-decoration: none;
     font-size: 1.7rem;
     color: #90143D;
+    padding: 1rem;
 }
 
 .contact-icons a:hover {
