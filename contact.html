@@ -64,15 +64,23 @@
             We always welcome any feedback so if you have suggestions on how to improve the game or any features you'd like to see included;
             fill out the form below and we'll get back to you as soon as we can!
         </p> 
+
         <!-- CONTACT FORM -->
-        <div class="form-group">
-            <form>
-                <input type="text" name="fullname" id="fullname" class="form-control"><br>
-                <input type="email" name="email" id="email" class="form-control"><br>
-                <textarea name="message" id="message" class="form-control" cols="30" rows="10"></textarea><br>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Name:</label><br>
+                <input type="text" name="fullname" id="fullname" class="form-control" required><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" name="email" id="email" class="form-control" required><br>
+
+                <label for="message">Your Feedback/Question:</label><br>
+                <textarea name="message" id="message" class="form-control" cols="30" rows="10" required></textarea><br>
+          
                 <input type="submit" name="submit" id="submit" value="Submit">
-            </form>
-        </div>
+            </div>
+        </form>
+        
         <!-- End of CONTACT FORM -->
     </div>
 
