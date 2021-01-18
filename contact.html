@@ -13,7 +13,6 @@
     <script type="text/javascript">
         (function(){
             emailjs.init("user_SUjH6Ld8fSDhwwuAm9wsz");
-            emailjs.send("gmail", "match-the-pairs");
         })();
     </script>
 </head>
@@ -76,7 +75,7 @@
             </p> 
 
             <!-- CONTACT FORM -->
-            <form>
+            <form onsubmit="return sendMail(this);">
                 <div class="form-group">
                     <label for="fullname">Name:</label><br>
                     <input type="text" name="fullname" id="fullname" class="form-control" required><br>
