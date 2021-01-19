@@ -40,6 +40,19 @@ for the Code Institute.
 
 ### **Skeleton**
 All wireframes were created using [Balsamiq](https://balsamiq.com/).
+#### Mobile - Home Page
+![Mobile Home Page Wireframe](documentation/wireframes/Mobile-home.png)
+
+#### Tablet - Home Page
+![Tablet Home Page Wireframe](documentation/wireframes/Tablet-home.png)
+
+#### Desktop - Home Page
+![Desktop Home Page Wireframe](documentation/wireframes/desktop-home.png)
+
+Full PDF versions of all wireframes can be found below;
+- [Mobile Wireframes](documentation/wireframes/mobile)
+- [Tablet Wireframes](documentation/wireframes/tablet)
+- [Desktop Wireframes](documentation/wireframes/desktop)
 
 ### **Surface**
 
