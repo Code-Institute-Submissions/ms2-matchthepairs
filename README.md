@@ -55,6 +55,32 @@ Full PDF versions of all wireframes can be found below;
 - [Desktop Wireframes](documentation/wireframes/desktop)
 
 ### **Surface**
+#### Design
+The design for the website is clean and uncluttered so the user is not distracted from the game they
+have come to play. On mobile and tablet devices the game takes up the whole screen with game instructions
+appearing in the form of a modal if the user requires them. This helps to maintain a clean design. On larger
+screens both the game and game instructions sit side by side. The overall design and appearance needs to be
+fun and appealing so that a user immediately understands what kind of site they are visiting. The Nunito font
+was also chosen as it creates a more casual and less serious look.
+
+#### Colour
+As the site is primarily for game play I wanted to ensure that the colours used were not dull or
+boring while also ensuring they didn't distract from the game itself. I used [Coolors.co](https://coolors.co/) to 
+create the colour scheme found below. The *Contrast Checker* tool was also used to check that all content would be
+easily seen. The placement of each colour was chosen to keep the site as clean and legible as possible.
+- 330C2F Dark Purple
+- F7F3F5 Snow
+- 7ADBE6 Sky Blue Crayola
+- 1F1F1F Eerie Black
+- 90143D Claret
+
+![Site Colour Scheme](documentation/colour-scheme.png)
+
+#### Imagery
+The images used for the game tiles were chosen as they're all bright and colourful but not so much so that they 
+are a distraction from the game or site itself.
+
+![Game Tile Images](documentation/tiles.jpg)
 
 ---
 ## <p align="center">**Features**</p>
@@ -64,6 +90,7 @@ Full PDF versions of all wireframes can be found below;
 ### **Languages**
 - HTML5
 - CSS3 
+- JavaScript
 
 ### **Technologies**
 - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) - used to create the site logo.
@@ -71,6 +98,7 @@ Full PDF versions of all wireframes can be found below;
 - [Balsamiq](https://balsamiq.com/) - used to create wireframes.
 - [Bootstrap](https://getbootstrap.com/)  - used throughout the website for responsive layouts across devices and various styling. 
 - [Coolors](https://coolors.co/) - used to choose colour scheme and for contrast-checking of chosen colours.
+- [EmailJS](https://www.emailjs.com/) - used to set up email template for contact form submission.
 - [Font Awesome](https://fontawesome.com/) - used icons to create social media links.
 - [Git](https://git-scm.com/) - version control software used to commit and push code to GitHub.
 - [GitHub](https://github.com/) - hosting site used to store the source code of the site with [GitHub Pages](https://pages.github.com/)
@@ -121,11 +149,11 @@ In order to make a clone, follow these steps:
 ---
 ## <p align="center">**Credits**</p>
 ### **Content**
-- All written content on the site was written by me.
+- All content on the site was written by me.
+- Code for site **modal** on *Home Page* taken and adapted from [w3schools.com](https://www.w3schools.com/bootstrap/bootstrap_modal.asp).
 
 ### **Media**
 - All images are my own.
-- The site logo was created by me.
 
 ### **Acknowledgements**
 - 
