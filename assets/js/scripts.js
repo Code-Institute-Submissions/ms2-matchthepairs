@@ -59,4 +59,12 @@ function resetTiles() {
     [firstTile, secondTile] = [null, null];
 }
 
+/* Shuffles game tiles; set to execute straight away, every time the page is loaded/reloaded, the tiles will shuffle */
+(function shuffle() {
+   tiles.forEach(tile => {
+     let ramdomPos = Math.floor(Math.random() * 12);
+     tile.style.order = ramdomPos;
+   });
+ })();
+
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
