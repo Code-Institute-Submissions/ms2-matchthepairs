@@ -222,3 +222,5 @@ In order to make a clone, follow these steps:
 
 ### **Acknowledgements**
 - Code for site **modal** on *Home Page* taken and adapted from [w3schools.com](https://www.w3schools.com/bootstrap/bootstrap_modal.asp).
+- Code for memory game play and shuffling functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/).
+    - This tutorial was the most similar to the initial idea I had for the game.
