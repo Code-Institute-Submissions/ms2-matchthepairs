@@ -36,5 +36,12 @@ function disableTiles() {
     secondTile.removeEventListener("click", flipTile);
 }
 
+/* Flip Tiles Back If Not Matched */
+function unflipTiles() {
+    setTimeout(() => {
+     firstTile.classList.remove("flip");
+     secondTile.classList.remove("flip");
+   }, 1200);
+}
 
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
