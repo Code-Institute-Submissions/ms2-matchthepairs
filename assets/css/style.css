@@ -126,9 +126,10 @@ h2 {
     display: none;
 }
 
+/*-------------------------GAME SECTION----------------------- */
 .game-section {
-    width: 40rem;
-    height: 35rem;
+    width: 41rem;
+    height: 34rem;
     margin: auto;
     padding-bottom: 2rem;
     padding-top: 1rem;
@@ -141,6 +142,11 @@ h2 {
     height: calc(25% - .625rem);
     margin: .3125rem;
     position: relative;
+    box-shadow: .2rem .2rem .2rem rgba(0,0,0,.4);
+}
+.game-tile:hover,
+.game-tile:active {
+    transform: scale(.95);
 }
 
 .front-tile,
