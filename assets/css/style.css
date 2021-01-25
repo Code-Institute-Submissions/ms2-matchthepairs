@@ -166,6 +166,10 @@ h2 {
     backface-visibility: hidden;
 }
 
+.front-tile {
+    transform: rotateY(180deg);
+}
+
 /*-------------------------CONTACT PAGE------------------- */
 .container-fluid {
     margin: 0;
