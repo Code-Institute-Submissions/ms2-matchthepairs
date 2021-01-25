@@ -4,8 +4,11 @@ const tiles = document.querySelectorAll(".game-tile");
 let flippedTile = false;
 let firstTile, secondTile;
 
+let pauseFlips = false;
+
 /* Game Tile Is Flipped When Clicked */
 function flipTile() {
+    if(pauseFlips) return;
     this.classList.add("flip");
 
     if(!flippedTile) {
@@ -38,9 +41,12 @@ function disableTiles() {
 
 /* Flip Tiles Back If Not Matched */
 function unflipTiles() {
+    pauseFlips = true;
+
     setTimeout(() => {
      firstTile.classList.remove("flip");
      secondTile.classList.remove("flip");
+     pauseFlips = false;
    }, 1200);
 }
 
