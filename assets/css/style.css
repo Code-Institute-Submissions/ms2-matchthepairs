@@ -147,6 +147,11 @@ h2 {
 .game-tile:hover,
 .game-tile:active {
     transform: scale(.95);
+    cursor: pointer;
+}
+
+.game-tile.flip {
+  transform: rotateY(180deg);
 }
 
 .front-tile,
