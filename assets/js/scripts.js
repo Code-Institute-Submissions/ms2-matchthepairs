@@ -20,4 +20,21 @@ function flipTile() {
     checkForMatch();
 }
 
+/* Check if Two Tiles Match */
+function checkForMatch(){
+    if(firstTile.dataset.type === secondTile.dataset.type) {
+    disableTiles();
+    return;
+    }
+
+    unflipTiles();
+}
+
+/* Disable Matched Tiles */
+function disableTiles() {
+    firstTile.removeEventListener("click", flipTile);
+    secondTile.removeEventListener("click", flipTile);
+}
+
+
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
