@@ -135,6 +135,7 @@ h2 {
     padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    perspective: 60rem;
 }
 
 .game-tile {
@@ -143,7 +144,10 @@ h2 {
     margin: .3125rem;
     position: relative;
     box-shadow: .2rem .2rem .2rem rgba(0,0,0,.4);
+    transform-style: preserve-3d;
+    transition: transform .3s;
 }
+
 .game-tile:hover,
 .game-tile:active {
     transform: scale(.95);
