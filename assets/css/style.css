@@ -156,6 +156,7 @@ h2 {
 
 .game-tile.flip {
   transform: rotateY(180deg);
+  box-shadow: none;
 }
 
 .front-tile,
