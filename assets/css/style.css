@@ -246,6 +246,10 @@ label {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+    .game-tile {
+        width: calc(25% - .625rem);
+        height: calc(33.333% - .625rem);
+    }
 }
 
 @media only screen and (min-width: 992px) {
