@@ -6,6 +6,8 @@ let firstTile, secondTile;
 
 let pauseFlips = false;
 
+const reset = document.querySelectorAll(".reset-btn");
+
 /* Game Tile Is Flipped When Clicked */
 function flipTile() {
     if(pauseFlips) return;
@@ -67,4 +69,14 @@ function resetTiles() {
    });
  })();
 
+ /* reset and shuffle game tiles when reset button is clicked */
+ function resetGame(){
+     tiles.forEach(tile => {
+     let ramdomPos = Math.floor(Math.random() * 12);
+     tile.style.order = ramdomPos;
+   });
+ }
+
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
+
+reset.addEventListener("click", resetGame());
