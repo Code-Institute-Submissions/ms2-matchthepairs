@@ -132,7 +132,7 @@ h2 {
     width: 41rem;
     height: 34rem;
     margin: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +170,24 @@ h2 {
 
 .front-tile {
     transform: rotateY(180deg);
+}
+
+.reset {
+    padding: .5rem 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.reset-btn {
+    border: .1rem #1F1F1F solid;
+    border-radius: 1rem;
+    letter-spacing: .2rem;
+    padding: .5rem;
+    background-color: #7ADBE6;
+    color: #1F1F1F;
+}
+.reset-btn:hover {
+    background-color: #90143D;
+    color: #F7F3F5;
 }
 
 /*-------------------------CONTACT PAGE------------------- */
