@@ -52,7 +52,7 @@ function unflipTiles() {
      firstTile.classList.remove("flip");
      secondTile.classList.remove("flip");
      resetTiles();
-   }, 1200);
+   }, 1000);
 }
 
 /* Resets Tiles; Prevents a single tile being clicked twice as a match */
