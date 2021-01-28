@@ -75,7 +75,7 @@
             </p> 
 
             <!-- CONTACT FORM -->
-            <form name="contactForm" onsubmit="return sendEmail(this);">
+            <form name="contactForm" id="contactForm" onsubmit="return sendEmail(this);">
                 <div class="form-group">
                     <label for="fullname">Name:</label><br>
                     <input type="text" name="fullname" id="fullname" class="form-control" required><br>
@@ -89,6 +89,8 @@
                     <input type="submit" name="submit" id="submit" value="Submit">
                 </div>
             </form>
+
+            <p id="submit-msg"></p>
             
             <!-- End of CONTACT FORM -->
         </div>
