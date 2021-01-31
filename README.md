@@ -220,7 +220,12 @@ In order to make a clone, follow these steps:
 - All content on the site was written by me.
 - All images and graphics are my own.
 
-### **Acknowledgements**
+### **Code**
 - Code for site **modal** on *Home Page* taken and adapted from [w3schools.com](https://www.w3schools.com/bootstrap/bootstrap_modal.asp).
-- Code for memory game play and shuffling functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/).
-    - This tutorial was the most similar to the initial idea I had for the game.
+- Code for memory game functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/),
+- Code Institute's [EmailJS module](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c) 
+was used to help set up the contact form submission.
+- Code for memory game counters taken and adapted from [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves).
+
+### **Acknowledgements**
+-
