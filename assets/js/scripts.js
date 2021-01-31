@@ -8,7 +8,13 @@ let pauseFlips = false;
 
 const reset = document.querySelectorAll(".reset-btn");
 
-/* Game Tile Is Flipped When Clicked */
+const pairCount = document.getElementById("pair-count");
+let pairCounter = 0;
+
+const matchCount = document.getElementById("match-count");
+let matchCounter = 0;
+
+/* Game Tile Is Flipped When Clicked; Counter is started for number of tile pairs that have been flipped, for each pair, the counter increases by 1*/
 function flipTile() {
     if(pauseFlips) return;
     if(this === firstTile) return;
@@ -22,13 +28,18 @@ function flipTile() {
     }
 
     secondTile = this;
+    hasFlippedCard = false;
+    pairCounter++;
+    pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
 
     checkForMatch();
 }
 
-/* Check if Two Tiles Match */
+/* Check if Two Tiles Match; Counter is started for number of tile pairs that have been matched, for each pair, the counter increases by 1 */
 function checkForMatch(){
     if(firstTile.dataset.type === secondTile.dataset.type) {
+    matchCounter++;
+    matchCount.innerHTML = `Total Matches: ${matchCounter}`;
     disableTiles();
     return;
     }
@@ -64,16 +75,16 @@ function resetTiles() {
 /* Shuffles game tiles; set to execute straight away, every time the page is loaded/reloaded, the tiles will shuffle */
 (function shuffle() {
    tiles.forEach(tile => {
-     let ramdomPos = Math.floor(Math.random() * 12);
-     tile.style.order = ramdomPos;
+     let shuffleTiles = Math.floor(Math.random() * 12);
+     tile.style.order = shuffleTiles;
    });
  })();
 
  /* reset and shuffle game tiles when reset button is clicked */
  function resetGame(){
      tiles.forEach(tile => {
-     let ramdomPos = Math.floor(Math.random() * 12);
-     tile.style.order = ramdomPos;
+     let shuffleTiles = Math.floor(Math.random() * 12);
+     tile.style.order = shuffleTiles;
    });
  }
 
