@@ -84,6 +84,7 @@ h2 {
 .modal-content {
     background-color: #F7F3F5;
     border: #7ADBE6 .25rem solid;
+    text-align: center;
 }
 
 .modal-title {
@@ -97,6 +98,7 @@ h2 {
 
 .modal-body li {
     text-align: left;
+    padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
@@ -190,6 +192,18 @@ h2 {
     color: #F7F3F5;
 }
 
+.panel {
+    color: #90143D;
+    font-weight: 600;
+    text-align: center;
+}
+
+#timer,
+#pair-count,
+#match-count {
+    padding: .5rem;
+}
+
 /*-------------------------CONTACT PAGE------------------- */
 .container-fluid {
     margin: 0;
@@ -275,7 +289,7 @@ label {
 /*-------------------------Media Queries----------------------- */ 
 @media only screen and (min-width: 576px) {
     .navbar-light .navbar-nav .nav-link:hover {
-        text-decoration: underline #7ADBE6 .3rem;
+        text-decoration: underline #7ADBE6;
         transition: .5s;
         background-color: #F7F3F5;
     }
