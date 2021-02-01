@@ -20,6 +20,8 @@ to play and is responsive across a range of devices.
     - [Skeleton](#skeleton)
     - [Surface](#surface)
  - [**Features**](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
  - [**Technologies Used**](#technologies-used)
     - [Languages](#languages)
     - [Technologies](#technologies)
@@ -61,10 +63,10 @@ to play and is responsive across a range of devices.
 - A *Difficulty Level* function, which changes the game depending on the chosen level, will be left as a feature to be implemented and so will **not** be included in this release.
 
 ### **Structure**
-The site has a simple and clear structure consisting of just two pages, *Home* and *Contact Us*. Both pages contain the same navigation bar and footer to allow for user navigation ease.
+The site has a simple and clear structure consisting of just two pages, *Play* and *Contact Us*. Both pages contain the same navigation bar and footer to allow for user navigation ease.
 The two pages are also consistent in colour and design to ensure the user is comfortable. 
 
-#### Home Page
+#### Play Page
 - Will contain the actual game and clear instructions for how to play.
 - On larger devices, the instructions will be clearly shown beside the game.
 - On smaller devices, the instructions will be available through a modal. The user will see a clear prompt on how to access this modal.
@@ -83,7 +85,7 @@ The two pages are also consistent in colour and design to ensure the user is com
 - Will shuffle the tiles for each new game played.
 
 #### Navigation Bar
-- Will contain the site logo which acts as a link to the *Home* page.
+- Will contain the site logo which acts as a link to the *Play* page.
 - Will contain clear names of the site pages for navigation ease.
 - Will remain consistent throughout the site.
 - Will turn into a hamburger menu style on smaller devices.
@@ -152,6 +154,77 @@ difficult to tell the images apart while looking for the matches.
 
 ---
 ## <p align="center">**Features**</p>
+The site is clean and simple, being responsive across various devices and maintaining design consistency throughout.
+Both pages on the site serve their own purpose making it easy to navigate for the user. Only features relevant to
+game-play and contacting site owners are included to avoid any site clutter or confusion. The same footer and navigation 
+bar are included on both pages.
+
+#### Play Page 
+- The landing page containing the game itself and game instructions; immediately showing purpose of site.
+- A link to the *Contact Us* Page is provided. 
+
+#### Contact Us Page 
+- Links to social media platforms (*Facebook, Twitter, Instagram and YouTube*) are provided.
+- Can be accessed through the navigation bar link, footer link or the link within the game instructions on the landing page.
+- Contains a contact form for users to fill out if they wish to contact the site owners.
+
+### **Existing Features**
+- **Game Panel**
+    - Contains a *timer* that begins once the user clicks on the first tile and ends when all the pairs have been matched.
+    - Contains a *counter* which counts how many pairs of tiles have been flipped, regardless of how many are matches.
+    - Contains a *counter* which counts how many matches have been made.
+
+- **Match the Pairs Game**
+    - Contains twelve game tiles and is responsive across devices.
+    - When the page is reloaded or the game reset, all game tiles are face-down.
+    - The user can click on one tile and then they choose a second. While the game quickly checks if the two tiles match, other tiles are locked 
+    (cannot be clicked on) to avoid any confusion.
+    - If those two tiles match then they will remain flipped and the user can select another two tiles.
+    - If those two tiles do not match then they will flip back and the user will need to select another two tiles.
+    - The game will end when all pairs have been matched.
+    - The user will be able to see their finished time and how many matches and flipped cards they made in the game panel above the tiles.
+
+- **Site Logo**
+    - The ***Match the Pairs*** logo in the left of the navigation bar exists on all site pages
+    on every device, and acts as a link to the *Play* Page to allow users to easily return to the landing page.
+
+- **Navigation Bar**
+    - The navigation bar at the top of the page exists on all site pages on every device to allow users to easily 
+    navigate through the site, ensuring the user will not get lost.
+    - Contains clear names of both site pages (*Play* and *Contact Us*) so the user knows what to expect from each page.
+    - On smaller devices (small tablets and mobiles) the bar turns into a hamburger-style menu to free up screen real estate.
+    When clicked, it expands to show the page names.
+    - On the full and collapsed menu, the current active page name is bold and a different colour, allowing users to easily see which page they are on. 
+    When other page names are hovered over, the font colour changes and it becomes underlined, confirming to users that it is a link.
+
+- **Social Media Links**
+    - Four social media links for *Facebook, Twitter, Instagram* and *YouTube* exist in the footer on both site pages on every device and also on the 
+    *Contact Us* Page.
+    - All four links are in the form of the appropriate and familiar social media icons, allowing users to know which platform they can expect to be brought to.
+    - When each icon is hovered over, the icon colour changes, confirming to users that it is a link.
+    - All four links open in a new tab so that the user does not lose their way back to the site.
+    - All four links will only bring the user to the general social media platform rather than to a specific profile.
+
+- **Contact Form**
+    - Contained on the *Contact Us* page
+    - A contact form with fields for **Name, Email Address, Your Feedback/Question:** and a **Submit button** exists on every device, which allows the user to contact the site owners
+    if they wish to do so.
+    - Each of the fields has a label to ensure the user knows what information is required.
+    - Each field is required and upon clicking the **Submit button**, if any field is left blank, users are alerted to this via a "Please fill out this field" message which will appear 
+    beneath the empty field. This allows users to easily see and understand why they cannot submit the form.
+    - Users are also alerted if the **Email Address** field is filled out incorrectly, i.e. wrong format, missing a "." or "@". If incorrect, users are alerted to this via a message 
+    which will appear beneath the field explaining what the problem is. This allows users to easily identify and fix the mistake. 
+    - Once the form has been successfully submitted, a "success" message will appear below the **Submit button** to alert the user that their message has been sent correctly.
+    - The site owner will receive an email containing the users information from the contact form.
+    - The user will receive an email to the email address they provided confirming that the site owner has received their message.
+
+### **Features Left to Implement**
+- **Leader Score Board**
+    - A score board that stores and displays the highest scores/quickest times of the game. This would allow the user to keep track of their own scores 
+    and/or try to beat their own scores or other users scores.
+
+- **Difficulty Levels**
+    - Allowing the user to choose the difficulty of the game or increasing the game's difficulty as the user progresses through the game.
 
 ---
 ## <p align="center">**Technologies Used**</p>
@@ -161,7 +234,7 @@ difficult to tell the images apart while looking for the matches.
 - JavaScript
 
 ### **Technologies**
-- [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) - used to create the site logo.
+- [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) - used to create the site logo and game tile image.
 - [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - used to resize and optimise all images for web.
 - [Balsamiq](https://balsamiq.com/) - used to create wireframes.
 - [Bootstrap](https://getbootstrap.com/)  - used throughout the website for responsive layouts across devices and various styling. 
@@ -176,6 +249,7 @@ used to deploy the live site.
 
 ---
 ## <p align="center">**Testing**</p>
+Testing information and content for this project can be found in the [separate TESTING.md](./TESTING.md) file.
 
 ---
 ## <p align="center">**Deployment**</p>
@@ -221,8 +295,8 @@ In order to make a clone, follow these steps:
 - All images and graphics are my own.
 
 ### **Code**
-- Code for site **modal** on *Home Page* taken and adapted from [w3schools.com](https://www.w3schools.com/bootstrap/bootstrap_modal.asp).
-- Code for memory game functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/),
+- Code for site **modal** on *Play Page* taken and adapted from [w3schools.com](https://www.w3schools.com/bootstrap/bootstrap_modal.asp).
+- Code for memory game functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/).
 - Code Institute's [EmailJS module](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c) 
 was used to help set up the contact form submission.
 - Code for memory game counters taken and adapted from [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves).
