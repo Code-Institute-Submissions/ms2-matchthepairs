@@ -30,8 +30,9 @@ function startTimer() {
     }, 1000);
 }
 
-/* Game Tile Is Flipped When Clicked; Counter is started for number of tile pairs that have been flipped, for each pair the counter increases by 1
-Timer also begins once the first game tile has been clicked */
+/* Game Tile Is Flipped When Clicked; Counter is started for number of tile pairs 
+that have been flipped, for each pair the counter increases by 1. Timer also begins 
+once the first game tile has been clicked */
 function flipTile() {
     if (timerOn === true) {
         startTimer();
@@ -57,7 +58,8 @@ function flipTile() {
     checkForMatch();
 }
 
-/* Check if Two Tiles Match; Counter is started for number of tile pairs that have been matched, for each match the counter increases by 1 */
+/* Check if Two Tiles Match; Counter is started for number of tile pairs that 
+have been matched, for each match the counter increases by 1 */
 function checkForMatch(){
     if(firstTile.dataset.type === secondTile.dataset.type) {
         matchCounter++;
@@ -77,7 +79,8 @@ function disableTiles() {
     resetTiles();
 }
 
-/* Flip Tiles Back If Not Matched; both tiles will flip back after the set timeout */
+/* Flip Tiles Back If Not Matched; both tiles will flip back after the set 
+timeout */
 function unflipTiles() {
     pauseFlips = true;
 
@@ -94,7 +97,8 @@ function resetTiles() {
     [firstTile, secondTile] = [null, null];
 }
 
-/* Shuffles game tiles; set to execute straight away, every time the page is loaded/reloaded, the tiles will shuffle */
+/* Shuffles game tiles; set to execute straight away, every time the page is 
+loaded/reloaded, the tiles will shuffle */
 (function shuffle() {
     tiles.forEach(tile => {
         let shuffleTiles = Math.floor(Math.random() * 12);
