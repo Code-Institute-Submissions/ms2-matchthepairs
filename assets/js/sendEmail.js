@@ -11,8 +11,8 @@ function sendEmail(contactForm){
         function(error) {
              document.getElementById("submit-msg").innerHTML = "Uh-oh! Something has gone wrong; message has not been sent!";
         }
-    )
+    );
 
     document.getElementById("contactForm").reset();
     return false;
-};
+}
