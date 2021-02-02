@@ -92,13 +92,13 @@ The two pages are also consistent in colour and design to ensure the user is com
 
 #### Contact Page
 - Will contain links to different social media platforms.
-    - As the site owners do not have social media accounts, these links will brings the user to the main social media platfrom rather than to a particular account.
+    - As the site owners do not have social media accounts, these links will brings the user to the main social media platform rather than to a particular account.
 - Will contain a contact form for the user to fill out with a field for *Name*, *Email Address*, *Your Feedback/Query* and a *Submit* button. 
 - Once the form is submitted, the user will receive an automated reply to the email address that they entered to confirm their message/query has been received.
 
 #### Footer
 - Will contain links to different social media platforms.
-    - As the site owners do not have social media accounts, these links will brings the user to the main social media platfrom rather than to a particular account.
+    - As the site owners do not have social media accounts, these links will brings the user to the main social media platform rather than to a particular account.
 - Will remain consistent throughout the site.
 - Will contain a link to the *Contact Us* page.
 
