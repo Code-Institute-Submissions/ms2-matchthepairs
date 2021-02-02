@@ -35,7 +35,7 @@
     <div class="container-fluid">
         <h1 class="main-heading">Match the Pairs
             <!-- MODAL BUTTON-->  
-            <button type="button" class="btn" data-toggle="modal" data-target="#instructionModal">
+            <button type="button" class="btn" data-toggle="modal" data-target="#instructionModal" aria-label="Open game instructions">
                 <i class="far fa-question-circle" aria-hidden="true"></i>
             </button>
         </h1>
@@ -61,7 +61,7 @@
                     </div>
                     <!-- MODAL CLOSE BUTTON--> 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close game instructions">Okay!</button>
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="reset">
-                <button class="reset-btn" onclick="resetGame()">Reset Game!</button>
+                <button class="reset-btn" onclick="resetGame()" aria-label="Reset Game Button">Reset Game!</button>
             </div>
         </div>
     </div>
