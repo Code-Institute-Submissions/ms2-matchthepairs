@@ -2,7 +2,7 @@
 
 # <p align="center">**MS2: Match The Pairs**</p>
 
- ### View the live project [here.]()
+ ### View the live project [here.](https://loftusn13.github.io/ms2-matchthepairs/index.html)
 
 This website has been created as my submission for Milestone Project 2 
 for the Code Institute. It is a card-matching memory game designed to be 
@@ -137,11 +137,11 @@ As the site is primarily for game play I wanted to ensure that the colours used 
 boring while also ensuring they didn't distract from the game itself. I used [Coolors.co](https://coolors.co/) to 
 create the colour scheme found below. The *Contrast Checker* tool was also used to check that all content would be
 easily seen. The placement of each colour was chosen to keep the site as clean and legible as possible.
-- #330C2F Dark Purple
-- #F7F3F5 Snow
-- #7ADBE6 Sky Blue Crayola
-- #1F1F1F Eerie Black
-- #90143D Claret
+- 330C2F Dark Purple
+- F7F3F5 Snow
+- 7ADBE6 Sky Blue Crayola
+- 1F1F1F Eerie Black
+- 90143D Claret
 
 ![Site Colour Scheme](documentation/colour-scheme.png)
 
@@ -182,7 +182,10 @@ bar are included on both pages.
     - If those two tiles match then they will remain flipped and the user can select another two tiles.
     - If those two tiles do not match then they will flip back and the user will need to select another two tiles.
     - The game will end when all pairs have been matched.
-    - The user will be able to see their finished time and how many matches and flipped cards they made in the game panel above the tiles.
+    - When all pairs have been matched, a popup modal will appear which displays the user's score and the time it took them to finish the game.
+        - Within this modal the user has the option to click a *Play Again* button or to click anywhere on the screen; either of which will cause the 
+        page to reload so that they can play the game again or navigate through the site.
+    - The *Reset Game* button will reload the page, allowing the user to start over if they wish.
 
 - **Site Logo**
     - The ***Match the Pairs*** logo in the left of the navigation bar exists on all site pages
@@ -299,7 +302,8 @@ In order to make a clone, follow these steps:
 - Code for memory game functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/).
 - Code Institute's [EmailJS module](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c) 
 was used to help set up the contact form submission.
-- Code for memory game counters taken and adapted from [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves).
+- [Stack Overflow](https://stackoverflow.com/) was a helpful resource for any minor code issues.
+- Code for memory game counters and the **Congratulations modal** (which appears when the game ends) has been taken and adapted from [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves).
 
 ### **Acknowledgements**
 -
