@@ -24,7 +24,8 @@ const modal = document.getElementById("congrats-modal");
 
 const playAgain = document.getElementById("play-again");
 
-/* Timer function to display mins and seconds once game begins */ 
+/* Timer function to display mins and seconds once game begins, ie. once the user 
+has clicked on the first tile the timer will begin */ 
 function startTimer() {
     timer = setInterval(function () {
         time++;
@@ -110,8 +111,11 @@ loaded/reloaded, the tiles will shuffle */
     });
 })();
 
+/* The game ends when the number of matches equals 6, meaning all pairs have
+been matched. This will cause the popup modal to become visible, displaying the
+users scores and the time taken. */
 function gameOver() {
-    if(matchCounter == 1) {
+    if(matchCounter == 6) {
         modal.classList.add("show");
         document.getElementById("totalMatches").innerHTML = matchCounter;
         document.getElementById("totalPairs").innerHTML = pairCounter;
@@ -121,6 +125,8 @@ function gameOver() {
     }
 }
 
+/* The game will be reset if the user clicks the screen while the popup modal
+is open. */
 function closeModal() {
     modal.addEventListener("click", function() {
         modal.classList.remove("show");
@@ -129,26 +135,18 @@ function closeModal() {
     })
 }
 
+/* The game will be reset by reloading the site page */
 function resetGame() {
     location.reload();
     return false;
 }
 
-/* Reset and shuffle game tiles when Reset button is clicked 
-function resetGame(){
-    tiles.forEach(tile => {
-        let shuffleTiles = Math.floor(Math.random() * 12);
-        tile.style.order = shuffleTiles;
-    });
-     Resets both counters back to 0  
-    pairCounter = 0;
-    pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
-    matchCounter = 0;
-    matchCount.innerHTML = `Total Matches: ${matchCounter}`;
- }*/
-
+/* Whenever the user clicks on a tile, the flipTile function will execute */
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
-modal.addEventListener("click", resetGame);
+
+/* If the user clicks the play again button within the popup modal, 
+the resetGame function will execute */
 playAgain.addEventListener("click", resetGame); 
 
-//reset.addEventListener("click", resetGame());
+/* If the user clicks the reset button, the resetGame function will execute */
+reset.addEventListener("click", resetGame);
