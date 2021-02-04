@@ -204,6 +204,52 @@ h2 {
     padding: .5rem;
 }
 
+/*------------------CONGRATULATIONS POPUP------------------ */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: .5s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.congrats {
+    background-color: #F7F3F5;
+    border: #7ADBE6 .25rem solid;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 5rem auto;
+    position: relative;
+    width: 80%;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+#play-again {
+    border: .1rem #1F1F1F solid;
+    border-radius: 1rem;
+    letter-spacing: .2rem;
+    padding: .5rem;
+    background-color: #7ADBE6;
+    color: #1F1F1F;
+}
+#play-again:hover {
+    background-color: #90143D;
+    color: #F7F3F5;
+}
+
 /*-------------------------CONTACT PAGE------------------- */
 .container-fluid {
     margin: 0;
