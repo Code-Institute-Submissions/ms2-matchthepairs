@@ -111,6 +111,11 @@ loaded/reloaded, the tiles will shuffle */
 function gameOver() {
     if(matchCounter == 1) {
         modal.classList.add("show");
+        document.getElementById("totalMatches").innerHTML = matchCounter;
+        document.getElementById("totalPairs").innerHTML = pairCounter;
+        document.getElementById("totalTime").innerHTML = `${mins}:${secs}`;
+
+        closeModal();
     }
 }
 
