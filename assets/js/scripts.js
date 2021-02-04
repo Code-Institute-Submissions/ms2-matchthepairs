@@ -22,6 +22,8 @@ let secs;
 
 const modal = document.getElementById("congrats-modal");
 
+const playAgain = document.getElementById("play-again");
+
 /* Timer function to display mins and seconds once game begins */ 
 function startTimer() {
     timer = setInterval(function () {
@@ -114,9 +116,22 @@ function gameOver() {
         document.getElementById("totalMatches").innerHTML = matchCounter;
         document.getElementById("totalPairs").innerHTML = pairCounter;
         document.getElementById("totalTime").innerHTML = `${mins}:${secs}`;
-
+        
         closeModal();
     }
+}
+
+function closeModal() {
+    modal.addEventListener("click", function() {
+        modal.classList.remove("show");
+
+        resetGame();
+    })
+}
+
+function resetGame() {
+    location.reload();
+    return false;
 }
 
 /* Reset and shuffle game tiles when Reset button is clicked 
@@ -133,5 +148,7 @@ function resetGame(){
  }*/
 
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
+modal.addEventListener("click", resetGame);
+playAgain.addEventListener("click", resetGame); 
 
-reset.addEventListener("click", resetGame());
+//reset.addEventListener("click", resetGame());
