@@ -175,6 +175,30 @@
                 <button class="reset-btn" onclick="resetGame()" aria-label="Reset Game Button">Reset Game!</button>
             </div>
         </div>
+        <!-- CONGRATULATIONS POPUP MODAL -->
+        <div id="congrats-modal" class="overlay">
+            <div class="congrats">
+                <h2>Congratulations!</h2>
+                <div class="congrats-content">
+                    <p>
+                        You found all the pairs, well done! See your score below!
+                    </p>
+                    <p>
+                        Total Matches: <span id="totalMatches"></span><br>
+                        Total Pairs Flipped: <span id="totalPairs"></span><br>
+                        Time Taken: <span id="totalTime"></span>
+                    </p>
+                    <p>
+                        Why not try to beat your time?! Hit the button below for another chance!
+                    </p>
+                </div>
+
+                <button id="play-again" onclick="resetGame()">
+                    Play again!
+                </button>
+            </div>
+        </div>
+        <!-- End of CONGRATULATIONS POPUP MODAL -->
     </div>
 
     <!-- FOOTER -->
