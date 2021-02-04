@@ -132,7 +132,7 @@ function closeModal() {
         modal.classList.remove("show");
 
         resetGame();
-    })
+    });
 }
 
 /* The game will be reset by reloading the site page */
