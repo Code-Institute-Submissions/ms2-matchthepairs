@@ -20,6 +20,8 @@ let timer;
 let mins;
 let secs;
 
+const modal = document.getElementById("congrats-modal");
+
 /* Timer function to display mins and seconds once game begins */ 
 function startTimer() {
     timer = setInterval(function () {
@@ -67,7 +69,6 @@ function checkForMatch(){
         disableTiles();
         return;
     }
-
     unflipTiles();
 }
 
@@ -77,6 +78,7 @@ function disableTiles() {
     secondTile.removeEventListener("click", flipTile);
 
     resetTiles();
+    gameOver();
 }
 
 /* Flip Tiles Back If Not Matched; both tiles will flip back after the set 
@@ -106,18 +108,24 @@ loaded/reloaded, the tiles will shuffle */
     });
 })();
 
-/* Reset and shuffle game tiles when Reset button is clicked */
+function gameOver() {
+    if(matchCounter == 1) {
+        modal.classList.add("show");
+    }
+}
+
+/* Reset and shuffle game tiles when Reset button is clicked 
 function resetGame(){
     tiles.forEach(tile => {
         let shuffleTiles = Math.floor(Math.random() * 12);
         tile.style.order = shuffleTiles;
     });
-    /* Resets both counters back to 0 */ 
+     Resets both counters back to 0  
     pairCounter = 0;
     pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
     matchCounter = 0;
     matchCount.innerHTML = `Total Matches: ${matchCounter}`;
- }
+ }*/
 
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
 
