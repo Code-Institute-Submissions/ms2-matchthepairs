@@ -137,6 +137,10 @@ The functionality of the game was manually tested to ensure there are no problem
     <p align="center"><img src="documentation/testing/bug1.png" alt="Game tiles showing game tile glitch" width="60%"/></p>
     
     - As seen in the above image, the top left tile is the one that was clicked but the image is not showing, instead the top tile image has just reversed.
+    - I created an alert that would appear to any user who opens the website in **Safari** to inform them that there is a bug so that they know why the game is not working.
+    This was done as a temporary solution until the bug is fixed.
+    <p align="center"><img src="documentation/testing/safari.png" alt="Safari glitch alert" width="60%"/></p>
+
     - This bug was not yet resolved upon submission of this project. Further testing will be required to fix this bug.
 
 ### **Testing User Stories**
