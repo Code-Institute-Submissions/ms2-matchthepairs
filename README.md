@@ -10,6 +10,8 @@ fun and interactive for users of all ages. The game is simple for the user
 to play and is responsive across a range of devices.   
 
 ---
+![Multi-Device Mockup](documentation/responsive.png)
+
 ## Contents
 - [**User Experience (UX)**](#ux)
     - [Strategy](#strategy)
@@ -31,6 +33,7 @@ to play and is responsive across a range of devices.
     - [Run Locally](#run-locally)
  - [**Credits**](#credits)
     - [Content](#content)
+    - [Code](#code)
     - [Acknowledgements](#acknowledgements)
 
 ---
@@ -40,7 +43,6 @@ to play and is responsive across a range of devices.
 #### User Stories
 - As a first-time visitor, I want the purpose of the website to be clear.
 - As a first-time visitor, I want the site and the game to be visually appealing.
-- As a first-time visitor, I want the game to be fun and easy to play.
 - As a first-time visitor, I want to easily find game instructions if I require them.
 - As a first-time visitor, I want to easily be able to contact the site owners.
 - As a first-time visitor, I want to be able to restart the game. 
@@ -238,6 +240,7 @@ bar are included on both pages.
 
 ### **Technologies**
 - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) - used to create the site logo and game tile image.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to create the multi-device image found at the top of this file.
 - [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - used to resize and optimise all images for web.
 - [Balsamiq](https://balsamiq.com/) - used to create wireframes.
 - [Bootstrap](https://getbootstrap.com/)  - used throughout the website for responsive layouts across devices and various styling. 
@@ -302,8 +305,10 @@ In order to make a clone, follow these steps:
 - Code for memory game functions taken and adapted from [Memory Game by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/).
 - Code Institute's [EmailJS module](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?activate_block_id=block-v1%3ACodeInstitute%2BIFD101%2B2017_T3%2Btype%40sequential%2Bblock%40e4710f80cdf34bffbd607bc102482d5c) 
 was used to help set up the contact form submission.
+- Code to detect if a user is using Safari to alert them to a known bug (as noted in the [separate TESTING.md](./TESTING.md) file) was taken from [this post](https://stackoverflow.com/questions/7944460/detect-safari-browser/31732310#31732310) from Stack Overflow and my mentor, Spencer Barriball.
 - [Stack Overflow](https://stackoverflow.com/) was a helpful resource for any minor code issues.
 - Code for memory game counters and the **Congratulations modal** (which appears when the game ends) has been taken and adapted from [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves).
 
 ### **Acknowledgements**
--
+- My mentor, Spencer Barriball for his helpful feedback and advice. 
+- Friends and family who viewed the website and played the game on their own devices and provided any feedback where necessary. 
