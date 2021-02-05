@@ -55,7 +55,7 @@
     <p align="center"><img src="documentation/testing/form-email-errors.jpg" alt="Contact Form Email Field Error Messages" width="60%"/></p>
     
     - I filled in all form fields correctly (with my own email address) and submit it.
-    - I made note of the success message that appears upon submitting the form successfully (as seen in the image below) and of a small bug, details of which can be found [here.](#known-bugs).
+    - I made note of the success message that appears upon submitting the form successfully (as seen in the image below) and of a small bug, details of which can be found [here.](#known-bugs)
      <p align="center"><img src="documentation/testing/form-success.png" alt="Contact Form Successful Submission Message" width="70%"/></p>
 
     - I checked the email inbox of the site owner to ensure the submitted contact form details were received correctly (as seen in the image below).
@@ -64,7 +64,25 @@
 
 ### **Memory Game**
 The functionality of the game was manually tested to ensure there are no problems with any aspect of game play.
+- When a game tile is clicked, the tile correctly flips to reveal the image beneath.
+- If the two selected game tiles match, the game correctly keeps them flipped and prevents the user from being able to click them again.
+- If the two selected game tiles do **not** match, the game correctly flips them back and allows the user to click them again.
+- The game correctly prevents the same game tile from being matched with itself.
+- The game tiles are successfully shuffled around when the page is reloaded.
 
+- Upon clicking the first game tile, the **Timer** successfully begins to run from zero.
+- Upon clicking a second game tile, the **Total Pairs Flipped Counter** successfully begins to count.
+    - With each pair of tiles that are flipped, the count increases by 1.
+- Upon matching two game tiles, the **Total Matches Counter** successfully begins to count.
+    - With each match that is found, the count increases by 1.
+<p align="center"><img src="documentation/testing/panel-test.png" alt="Game Panel Testing" width="70%"/></p>
+
+- Upon clicking the **Reset Game!** button, the page successfully reloads; resetting the game.
+- When the **Total Matches Counter** reaches a count of **6**, meaning all the tiles have been matched, the game ends.
+    - This successfully causes the **Congratulations Modal** to appear on screen.
+    - This modal correctly displays the user's total matches, total pairs flipped and the time it took to find all 6 matches.
+    - Upon clicking the **Play Again!** button, the page successfully reloads, allowing the user to play the game again.
+<p align="center"><img src="documentation/testing/congrats.png" alt="Game over congratulations modal" width="70%"/></p>
 
 ### **Accessibility**
 - I manually checked;
@@ -107,30 +125,72 @@ The functionality of the game was manually tested to ensure there are no problem
     - **Opera:** Site works well with no issues noted.
     - **Microsoft Edge:** Site works well with no issues noted.
 - The following browsers were used for manual testing on various mobile devices:
-    - **Google Chrome:** Site works well on Android but there is a bug noted on Apple, details of which can be found [here.](#known-bugs)
+    - **Google Chrome:** Site works well with no issues noted.
     - **Safari:** Bug noted, details of which can be found [here.](#known-bugs)
 
 ### **Known Bugs**
 - Upon submitting the **Contact Form** successfully, there is a slight delay in the *Success message* appearing.
-    - Further testing will be required to fix this bug.
-- The **Safari** browser and **Google Chrome** (on Apple devices) does not allow the user to play the game. 
+    - This bug was not yet resolved upon submission of this project. Further testing will be required to fix this bug.
+- The **Safari** browser does not allow the user to play the game. 
     - The timer and counters begin as normal once a user clicks the first tile.
     - When a user clicks on a game tile, the tile flips but the image underneath is not shown meaning the user cannot match images.
-    <p align="center"><img src="documentation/testing/bug1.png" alt="Accessibility results screenshot, shows 98%" width="60%"/></p>
+    <p align="center"><img src="documentation/testing/bug1.png" alt="Game tiles showing game tile glitch" width="60%"/></p>
     
     - As seen in the above image, the top left tile is the one that was clicked but the image is not showing, instead the top tile image has just reversed.
+    - This bug was not yet resolved upon submission of this project. Further testing will be required to fix this bug.
 
 ### **Testing User Stories**
 - **"As a first-time visitor, I want the purpose of the website to be clear."**
+    - Upon arriving on the landing page the user can immediately see the game.
+    - The user can also see game instructions which further reinforce the purpose of the site; game play.
+    - The above points are true across all devices; mobile, tablet, desktop.
 
-- **"As a first-time visitor, I want the site and the game to be visually appealing."**
-
-- **"As a first-time visitor, I want the game to be fun and easy to play."**
+- **"As a first-time visitor, I want the site and the game to be visually appealing."** 
+    - The user will find the site and game responsive across devices as seen in the image below.
+    <p align="center"><img src="documentation/testing/responsive.jpg" alt="Site Displayed on Multiple Devices" width="80%"/></p>
+    
+    - The user can see all content clearly.
+    - The user will find bright and colourful images on all game tiles.
+    - The user will find the site visually consistent.
+    - The above points are true across all devices; mobile, tablet, desktop.
 
 - **"As a first-time visitor, I want to easily find game instructions if I require them."**
+    - On larger screens, the user can find game instructions clearly displayed to the right of the game on the *Play* Page.
+    - On tablet and mobile devices, the user can find a prompt above the game which tells the user how to access game instructions;
+        - The user can click on the question mark icon, as prompted, to open a modal with game instructions as seen in the image below.
+    <p align="center"><img src="documentation/testing/instruction.png" alt="Game Instruction Modal" width="80%"/></p>    
 
 - **"As a first-time visitor, I want to easily be able to contact the site owners."**
+    - The user can click on *Contact Us* in the navigation menu to go directly there.
+    - The user can also click on a link located in the footer to bring them to the *Contact Us* Page. 
+    The link is within a message stating "Contact Us **here**.", which tells the user that this link will bring them to a place to make contact.
+    - The user can also click on a link located within the game instructions on the landing page to bring them to the *Contact Us* Page.
+    The link is within the *6th* point stating "please **contact us**", which tells the user that this link will bring them to a place to make contact.
+    - On the *Contact Us* Page the user will then immediately find a contact form to fill out;
+        - This form allows the user to enter their feedback or question as well as providing their name and an email address for the site owner to respond to.
+        - The user will be alerted if they try to submit the form with a blank field or if a field is filled incorrectly.
+        - The user will be alerted if the form has been submitted successfully.
+        - The user will receive an email confirming the site owner has received their message.
+        - Full details of the testing involved for this contact form can be found [here](#contact-form).
+    <p align="center"><img src="documentation/testing/contact.png" alt="Contact Us Page link locations" width="80%"/></p>
+
+    - The above points are true across all devices; mobile, tablet, desktop.
 
 - **"As a first-time visitor, I want to be able to restart the game. "**
+    - On the landing page the user can find the game clearly.
+    - Once the user clicks on the first game tile the game begins; the timer starts and tile pairs start being counted.
+    - If the user wants to start over they can find a button directly below the game clearly called **Reset Game!**.
+    - If hovered over, this button changes colour from blue to red to show the user it is clickable, as shown in the image below.
+    - The user can click this button to restart the game.
+    <p align="center"><img src="documentation/testing/story6.png" alt="Reset button " width="80%"/></p>
+
+    - The above points are true across all devices; mobile, tablet, desktop.
 
 - **"As a first-time visitor, I want to see my score as I'm playing the game."**
+    - On the landing page the user can find the game clearly.
+    - Once the user clicks on the first game tile the game begins and the timer starts.
+    - As the user is clicking tiles, they can see their score actively updating in the game panel above the tiles.
+    - The user's "Total Pairs Flipped" and "Total Matches" are displayed in the game panel as seen in the image below.
+    <p align="center"><img src="documentation/testing/story7.png" alt="Game panel " width="80%"/></p>
+
+    - The above points are true across all devices; mobile, tablet, desktop.
