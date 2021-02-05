@@ -24,6 +24,13 @@ const modal = document.getElementById("congrats-modal");
 
 const playAgain = document.getElementById("play-again");
 
+/* Recognise if a user is viewing the site using Safari to enable an alert to inform users
+about a currently unresolved bug; taken from a post credited in README file. */
+let isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent &&
+    navigator.userAgent.indexOf('CriOS') === -1 &&
+    navigator.userAgent.indexOf('FxiOS') === -1;
+
 /* Timer function to display mins and seconds once game begins, ie. once the user 
 has clicked on the first tile the timer will begin */ 
 function startTimer() {
@@ -56,7 +63,6 @@ function flipTile() {
     }
 
     secondTile = this;
-    hasFlippedCard = false;
     pairCounter++;
     pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
 
@@ -103,11 +109,14 @@ function resetTiles() {
 }
 
 /* Shuffles game tiles; set to execute straight away, every time the page is 
-loaded/reloaded, the tiles will shuffle */
+loaded/reloaded, the tiles will shuffle. Opens an alert if opened in Safari to alert users
+to a currently unresolved bug */
 (function shuffle() {
+    if(isSafari) {
+        alert("We are currently experiencing a bug with the Safari browser you are using. Please try using another browser like Google Chrome. Sorry for the inconvenience!");
+    }
     tiles.forEach(tile => {
-        let shuffleTiles = Math.floor(Math.random() * 12);
-        tile.style.order = shuffleTiles;
+        tile.style.order = Math.floor(Math.random() * 12).toString();
     });
 })();
 
@@ -115,10 +124,10 @@ loaded/reloaded, the tiles will shuffle */
 been matched. This will cause the popup modal to become visible, displaying the
 users scores and the time taken. */
 function gameOver() {
-    if(matchCounter == 6) {
+    if(matchCounter === 6) {
         modal.classList.add("show");
-        document.getElementById("totalMatches").innerHTML = matchCounter;
-        document.getElementById("totalPairs").innerHTML = pairCounter;
+        document.getElementById("totalMatches").innerHTML = matchCounter.toString();
+        document.getElementById("totalPairs").innerHTML = pairCounter.toString();
         document.getElementById("totalTime").innerHTML = `${mins}:${secs}`;
         
         closeModal();
